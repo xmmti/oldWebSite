@@ -150,6 +150,11 @@ body{direction: rtl; font-family: '29LT Azer';
 				
     <!--End-->
 	<script>
+caches.keys().then(cacheNames => {
+  cacheNames.forEach(cacheName => {
+    caches.delete(cacheName);
+  });
+});
 	$(".col-md-4:hidden:lt(3)").show(0, function(){
     !$(".col-md-4:hidden").length && $("#ShowMore").hide() ; 
   });
