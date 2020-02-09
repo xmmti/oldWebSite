@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
  <style>
-body{direction: rtl; font-family: '29LT Azer';
+body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
     font-weight: bold;};
 	a{font-family: 'Prata';}
 	#itcard { display:none; }
@@ -48,12 +48,16 @@ body{direction: rtl; font-family: '29LT Azer';
   color:#fff;
   border: 1px solid#1dd1a1;
  }
+.bg-dark {
+    background-color: #7a7a7a;
+}
+
 	.itbink{
   background:#e83e8c;
 }
  </style>
   <body> 
-<nav style="direction: ltr; font-family: 'Open Sans'" class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav style="direction: ltr; font-family: 'Open Sans'" class="navbar navbar-expand-md bg-light navbar-light">
   <a class="navbar-brand" href="/index.html">mmti</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -66,7 +70,7 @@ body{direction: rtl; font-family: '29LT Azer';
  </ul>
   <ul class="navbar-nav ml-auto">
  <li class="nav-item">
-	         <li style="background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)" class="nav-item"> <a id="instalink" href='https://instagram.com/mmti.done' class="nav-link icon d-flex align-items-center"><i class="ion-logo-instagram mr-2"></i> instagram</a></li>	  
+	         <li style="background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)" class="nav-item"> <a style="color: #f8f9fa;" id="instalink" href='https://instagram.com/mmti.done' class="nav-link icon d-flex align-items-center"><i class="ion-logo-instagram mr-2"></i> instagram</a></li>	  
 	 </ul>
 	   </div>  
    
@@ -75,11 +79,11 @@ body{direction: rtl; font-family: '29LT Azer';
 
   
 		   <!--Start-->
-<section class="ftco-section ftco-section-2 bg-light" id="cards">
+<section class="ftco-section ftco-section-2 bg-dark" id="cards">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 style="text-align: center;" class="heading-section mb-4 pb-md-3">
+						<h2 style="text-align: center; color: #ffffff;" class="heading-section mb-4 pb-md-3">
 					 الأدوات
 							</h2>
 					</div>
@@ -216,7 +220,7 @@ body{direction: rtl; font-family: '29LT Azer';
 					</div>
 			</div>
 	  </section>
-	  <div class="col text-center bg-light" id="ShowMore">
+	  <div class="col text-center bg-dark" id="ShowMore">
  <button id="load" style="direction: ltr; font-family: 'Open Sans'" type="button" class="btn btn-mybink btn-round">
              <h>Load More...</h> <i class="ion-ios-heart"></i> 
             </button>
@@ -224,7 +228,7 @@ body{direction: rtl; font-family: '29LT Azer';
 				
     <!--End-->
 	<!-- Footer -->
-        <footer class="page-footer font-small blue">
+        <footer class="page-footer font-small blue bg-dark">
 
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3">
@@ -241,7 +245,7 @@ caches.keys().then(cacheNames => {
     caches.delete(cacheName);
   });
 });
-	$(".col-md-4:hidden:lt(3)").show(0, function(){
+	$(".col-md-4:hidden:lt(5)").show(0, function(){
     !$(".col-md-4:hidden").length && $("#ShowMore").hide() ; 
   });
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
