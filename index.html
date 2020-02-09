@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="css/ionicons.min.css">
 		
@@ -101,7 +103,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 				</div>
 				<div class="row">
 				<!--Card-->
-<div class="col-md-4" id="itcard">
+<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -117,7 +119,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 			</div>				
 				 <!--Card End-->
 					<!--Card-->
-<div class="col-md-4" id="itcard">
+<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -133,7 +135,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 			</div>				
 				 <!--Card End-->
 				<!--Card-->
-<div class="col-md-4" id="itcard">
+<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -149,7 +151,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 			</div>				
 				 <!--Card End-->
 				<!--Card-->
-<div class="col-md-4" id="itcard">
+<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -164,7 +166,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 			</div>				
 				 <!--Card End-->
 				<!--Card-->
-<div class="col-md-4" id="itcard">
+<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -178,7 +180,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 					</div>
 			</div>				
 				 <!--Card End-->
-							<div class="col-md-4" id="itcard">
+							<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -191,7 +193,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 						</div>
 					</div>
 			</div>
-					<div class="col-md-4" id="itcard">
+					<div class="col-md-4" id="itcard" data-aos="fade-up">
 						<h2 class="heading-section mb-4 pb-md-3">
 
 						</h2>
@@ -204,7 +206,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 						  </div>
 						</div>
 					</div>
-					<div class="col-md-4" id="itcard">
+					<div class="col-md-4" id="itcard" data-aos="fade-up">
 						<h2 class="heading-section mb-4 pb-md-3">
 						
 						</h2>
@@ -217,7 +219,7 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4" id="itcard">
+				<div class="col-md-4" id="itcard" data-aos="fade-up">
 				<h2 class="heading-section mb-4 pb-md-3">
 				
 						</h2>
@@ -257,6 +259,7 @@ caches.keys().then(cacheNames => {
     caches.delete(cacheName);
   });
 });
+ AOS.init();
 	$(".col-md-4:hidden:lt(3)").show(0, function(){
     !$(".col-md-4:hidden").length && $("#ShowMore").hide() ; 
   });
