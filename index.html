@@ -38,16 +38,27 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
     font-weight: bold;};
 	a{font-family: 'Prata';}
 	#itcard { display:none; }
+	.mt-5 {
+  margin-top: 5 !important;
+}
 .btn.btn-mybink {
  background:#e83e8c;
   color:#fff;
   border: 1px solid#e83e8c;
  }
+ .bg-4 { 
+    background-color: #2f2f2f;
+    color: #fff;
+  }
  .btn.btn-mygreen {
  background:#1dd1a1;
   color:#fff;
   border: 1px solid#1dd1a1;
  }
+   .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 .bg-dark {
     background-color: #7a7a7a;
 }
@@ -221,14 +232,15 @@ body{direction: rtl; font-family: '29LT Azer'; background-color: #7a7a7a;}
 			</div>
 	  </section>
 	  <div class="col text-center bg-dark" id="ShowMore">
- <button id="load" style="direction: ltr; font-family: 'Open Sans'" type="button" class="btn btn-mybink btn-round">
+ <button id="load" style="direction: ltr; font-family: 'Open Sans'" type="button" class="btn btn-mybink btn-round position-relative mt-5">
              <h>Load More...</h> <i class="ion-ios-heart"></i> 
             </button>
+			<br><br><br>
   				</div>
 				
     <!--End-->
 	<!-- Footer -->
-        <footer class="page-footer font-small blue bg-dark">
+        <footer class="container-fluid bg-4 text-center">
 
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3">
@@ -245,7 +257,7 @@ caches.keys().then(cacheNames => {
     caches.delete(cacheName);
   });
 });
-	$(".col-md-4:hidden:lt(5)").show(0, function(){
+	$(".col-md-4:hidden:lt(3)").show(0, function(){
     !$(".col-md-4:hidden").length && $("#ShowMore").hide() ; 
   });
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
