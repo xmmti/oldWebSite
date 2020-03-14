@@ -19,6 +19,10 @@ p.cardfont {
     padding: 5px
 }
 
+.noeff{
+    color: white !important;
+    text-decoration: none !important;
+}
 
 .mriit {
     border-style: none;

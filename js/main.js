@@ -39,3 +39,10 @@ function Set_Dark() {
   $('nav').css("background-color","#202020");
    $('nav, #text_is').css("color","#fff");
 }
+if(screen.width < 500 ||
+  navigator.userAgent.match(/Android/i) ||
+  navigator.userAgent.match(/webOS/i) ||
+  navigator.userAgent.match(/iPhone/i) ||
+  navigator.userAgent.match(/iPod/i)) {
+    $("a[href='https://instagram.com/mmti.done']").attr('href', 'instagram://user?username=mmti.done')
+ }
