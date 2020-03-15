@@ -12,7 +12,7 @@ a, p{
     margin-right: 5px;
 }
 
-p.cardfont { 
+p.cardfont, .font-small { 
    font-family: "IBM Light"
   }
 
