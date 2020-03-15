@@ -20,6 +20,20 @@ if (mode_is == 0) {
 }
 });
 
+  this.addEventListener('activate', function(event) {
+  var cachesToKeep = ['v2'];
+
+  event.waitUntil(
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (cachesToKeep.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+});
+
 function Set_light() {
   $(".cardmode").css("background-color","#f3f3f3");
   $(".cardmode").css("color","#000000");
