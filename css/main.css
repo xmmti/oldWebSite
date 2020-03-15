@@ -20,7 +20,7 @@ p.cardfont, .font-small {
 }
 
 .noeff{
-    color: white !important;
+    color: #fff;
     text-decoration: none !important;
 }
 

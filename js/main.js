@@ -35,6 +35,7 @@ if (mode_is == 0) {
 });
 
 function Set_light() {
+  $(".noeff").css("color", "#000000")
   $(".cardmode").css("background-color","#f3f3f3");
   $(".cardmode").css("color","#000000");
   $("body").css("background-color","#fff");
@@ -45,6 +46,7 @@ function Set_light() {
 	$('nav, #text_is').css("color","#212529");
 }
 function Set_Dark() {
+  $(".noeff").css("color", "#fff")
  $(".cardmode").css("background-color","#343a40");
   $(".cardmode").css("color","#fff");
   $("body").css("background-color","#202020");
