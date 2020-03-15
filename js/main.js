@@ -10,7 +10,7 @@ var hour = new Date().getHours();
   };
 
 $( "#bt-color" ).click(function() {
-  $("div, nav").fadeOut(100).fadeIn(65); 
+  //$("div, nav").fadeOut(100).fadeIn(65); 
 if (mode_is == 0) {
   Set_light()
 	mode_is = 1
@@ -39,8 +39,7 @@ function Set_Dark() {
   $('nav').css("background-color","#202020");
    $('nav, #text_is').css("color","#fff");
 }
-if(screen.width < 500 ||
-  navigator.userAgent.match(/Android/i) ||
+if(navigator.userAgent.match(/Android/i) ||
   navigator.userAgent.match(/webOS/i) ||
   navigator.userAgent.match(/iPhone/i) ||
   navigator.userAgent.match(/iPod/i)) {

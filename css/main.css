@@ -9,7 +9,6 @@ a, p{
 
 .igcolor{
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
-    margin-right: 5px;
 }
 
 p.cardfont, .font-small { 
@@ -26,6 +25,7 @@ p.cardfont, .font-small {
 }
 
 .mriit {
+	margin-right: 5px;
     border-style: none;
     border-radius: 0 !important;
   }
@@ -41,7 +41,15 @@ p.cardfont, .font-small {
 }
 
 body{
+	padding-bottom: 85px;
     background-color: #202020;
+}
+
+footer{
+ position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }
 p, .textcol 
 {word-wrap: break-word;
