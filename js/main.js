@@ -1,7 +1,7 @@
 var mode_is = 0;
 AOS.init();
 var hour = new Date().getHours();
-  if (hour > 12) {
+  if (hour >= 12) {
     Set_Dark()
     mode_is = 0
   } else {
@@ -21,7 +21,7 @@ if (mode_is == 0) {
 });
 
 function Set_light() {
-  $(".cardmode").css("background-color","#fff");
+  $(".cardmode").css("background-color","#f3f3f3");
   $(".cardmode").css("color","#000000");
   $("body").css("background-color","#fff");
    //$('#bt-color').text("Dark");
