@@ -1,6 +1,17 @@
 var mode_is = 0;
 AOS.init();
-var hour = new Date().getHours();
+
+$(document).ready(function(){
+
+try {
+ Set_bytime()
+}catch(err) {
+   Set_bytime()
+}
+});
+
+function Set_bytime() {
+	var hour = new Date().getHours();
   if (hour >= 12) {
     Set_Dark()
     mode_is = 0
@@ -19,6 +30,8 @@ if (mode_is == 0) {
 	 mode_is = 0
 }
 });
+}
+
 
   this.addEventListener('activate', function(event) {
   var cachesToKeep = ['v2'];
