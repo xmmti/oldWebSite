@@ -1,36 +1,34 @@
-var mode_is = 0;
 AOS.init();
-
+var mode_is = 0;
 $(document).ready(function(){
-
-try {
- Set_bytime()
-}catch(err) {
-   Set_bytime()
+ const myvalue = localStorage.getItem('theme');
+    if((myvalue) === null){
+  Set_bytime();
+} else {
+	if((myvalue) === "dark"){
+  Set_Dark()
+}else{
+	 Set_light()
+};
 }
 });
-
 function Set_bytime() {
 	var hour = new Date().getHours();
   if (hour >= 12) {
     Set_Dark()
-    mode_is = 0
+	mode_is = 0;
   } else {
     Set_light()
-    mode_is = 1
-  };
+	mode_is = 0;
+}};
 
 $( "#bt-color" ).click(function() {
-  //$("div, nav").fadeOut(100).fadeIn(65); 
-if (mode_is == 0) {
-  Set_light()
-	mode_is = 1
-} else {
-  Set_Dark()
-	 mode_is = 0
-}
+if (mode_is === 0){
+	Set_Dark()
+}else{
+	Set_light()
+};
 });
-}
 
 
   this.addEventListener('activate', function(event) {
@@ -48,6 +46,8 @@ if (mode_is == 0) {
 });
 
 function Set_light() {
+	    mode_is = 0;
+		localStorage.setItem('theme', 'light');
   $(".noeff").css("color", "#000000")
   $(".cardmode").css("background-color","#f3f3f3");
   $(".cardmode").css("color","#000000");
@@ -59,6 +59,8 @@ function Set_light() {
 	$('nav, #text_is').css("color","#212529");
 }
 function Set_Dark() {
+	    mode_is = 1;
+		localStorage.setItem('theme', 'dark');
   $(".noeff").css("color", "#fff")
  $(".cardmode").css("background-color","#343a40");
   $(".cardmode").css("color","#fff");
